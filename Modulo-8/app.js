@@ -11,9 +11,9 @@ app.get("/:cep", async (req, res) => {
 			res.status(400).json({ mensagem: "Um erro foi encontrado." });
 		} else {
 			res.json({
-				logradouro: data.logradouro,
+				endereço: data.logradouro,
 				bairro: data.bairro,
-				localidade: data.localidade,
+				cidade: data.localidade,
 				uf: data.uf,
 				cep: data.cep,
 				ibge: data.ibge,
